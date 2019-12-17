@@ -3,9 +3,8 @@
 
 using namespace std;
 int main() {
-    unsigned long long int i, j;
+    unsigned long long int i=0, j=0;
     bool prime = true;
-    i = 0;
     while ( i < __UINT64_MAX__ ) {
         i++;
         j = 2;
@@ -19,9 +18,7 @@ int main() {
             }
             j++;
         }
-        if (prime == true) {
-            cout << i << endl;            
-        }        
+        if (prime == true) {cout << i << endl}        
     }
 
     return 0;
