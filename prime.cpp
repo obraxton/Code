@@ -18,7 +18,7 @@ int main() {
             }
             j++;
         }
-        if (prime == true) {cout << i << endl}        
+        if (prime == true) {cout << i << endl;}        
     }
 
     return 0;
