@@ -1,7 +1,5 @@
 #include <iostream>
 #include <cstdlib>
-#include <math.h>
-
 using namespace std;
 int main(int argc, char *argv[]) {
     
@@ -37,7 +35,7 @@ int main(int argc, char *argv[]) {
         start++;
         j = 2;
         prime = true;
-        while (j < sqrt(start)) {
+        while (j*j < start) {
             if (start % j == 0) {
                 prime = false;
                 break;
