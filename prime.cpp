@@ -2,7 +2,7 @@
 #include <cstdlib>
 using namespace std;
 int main(int argc, char *argv[]) {
-    
+
     unsigned long long int start=1, j=0, end=0;
     switch (argc) {
     case 2:
@@ -28,8 +28,9 @@ int main(int argc, char *argv[]) {
         return -1;
         break;
     }
-    if (start >= end) { return -1; }
-    
+    if (start >= end) {
+    	return -1;
+    }
     bool prime = true;
     while ( start < end ) {
         start++;
@@ -42,7 +43,9 @@ int main(int argc, char *argv[]) {
             }
             j++;
         }
-        if (prime == true) { cout << start << endl; }        
+        if (prime == true) {
+        	cout << start << endl;
+        }
     }
 
     return 0;
